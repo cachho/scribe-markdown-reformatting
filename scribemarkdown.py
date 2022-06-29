@@ -34,7 +34,7 @@ def cursive_extra_fields(string):
 
 def main():
     for filename in os.listdir('src'):
-        os.makedirs(os.path.dirname("dst/"+filename), exist_ok=True)
+        os.makedirs(os.path.dirname("dst/"+filename), exist_ok=True) #Line that requires Python >3.2
         with open("src/"+filename, "r") as f_in:
             lines = f_in.readlines()
             f_out = open("dst/"+filename, "w")
